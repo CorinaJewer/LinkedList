@@ -1,4 +1,4 @@
-Linked List Assignment - Data Strutures - Semester 4
+Linked List Assignment - Data Structures - Semester 4
 - Create a Linked List
 - Traverse a Linked List
 - Search for a node value in a Linked List
