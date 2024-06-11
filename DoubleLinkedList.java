@@ -11,7 +11,7 @@ public class DoubleLinkedList {
         this.size = 1;
         return head;
     }
-    // Add a DoubleNode at a particular index in a LinkedList
+    // Add a DoubleNode at a particular index in a Double LinkedList
    public void addDoubleNodeWithLocation(int nodeValue, int location){
         DoubleNode newNode = new DoubleNode(nodeValue);
         if (head == null){
@@ -40,7 +40,7 @@ public class DoubleLinkedList {
         size++;
    }
 
-   // Traverse a Linked List
+   // Traverse a Double LinkedList
    public void traverseDoubleLinkedList(){
         if (head == null) {
             System.out.println("DLL does not exist.");
@@ -57,8 +57,8 @@ public class DoubleLinkedList {
         System.out.print("\n");
     }
 
-    // Reverse Traverse a Linked List
-    public void reverseTraverseLinkedList(){
+    // Reverse Traverse a Double LinkedList
+    public void reverseTraverseDoubleLinkedList(){
         if (head == null){
             System.out.println("DLL does not exist.");
         }else{
@@ -74,7 +74,7 @@ public class DoubleLinkedList {
         System.out.print("\n");
     }
 
-    // Search Double LinkedList
+    // Search for the first instance of a value in a Double LinkedList
     public boolean searchDoubleNode (int nodeValue){
         if (head != null) {
             DoubleNode tempNode = head;
@@ -159,7 +159,7 @@ public class DoubleLinkedList {
         doubleLinkedList.addDoubleNodeWithLocation(28, 3);
         doubleLinkedList.addDoubleNodeWithLocation(21, 2);
         doubleLinkedList.traverseDoubleLinkedList();
-        doubleLinkedList.reverseTraverseLinkedList();
+        doubleLinkedList.reverseTraverseDoubleLinkedList();
         doubleLinkedList.searchDoubleNode(7);
         doubleLinkedList.deleteDoubleNodeWithLocation(1);
         doubleLinkedList.traverseDoubleLinkedList();
