@@ -55,6 +55,7 @@ public class SingleLinkedList {
     public void deleteNodeWithLocation(int location){
         if (head == null){
             System.out.println("A Single LinkedList does not exist.");
+            return;
         }else if (location == 0){ //Delete head node
             head = head.getNext();
             if (head == null) { 
@@ -72,7 +73,8 @@ public class SingleLinkedList {
             for (int i = 0; i < location - 1; i++) {
                 tempNode = tempNode.getNext();
             }
-            tempNode.setNext(tempNode.getNext().getNext()); // bypassing node
+            Node nodeToDelete = tempNode.getNext();       
+            tempNode.setNext(nodeToDelete.getNext()); // bypassing node
         }
         size--;
     }
