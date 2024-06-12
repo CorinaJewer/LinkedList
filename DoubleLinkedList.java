@@ -96,12 +96,16 @@ public class DoubleLinkedList {
             System.out.println("DLL does not exist.");
         }else if(location == 0){ // Delete head DoubleNode
             head = head.getNext();
-            if (head == null){
+            if (head != null){
+                head.setPrev(null);
+            }else{
                 tail = null;
             }
         }else if (location >= size - 1){ // Delete tail DoubleNode
             tail = tail.getPrev();
-            if(tail == null){
+            if(tail != null){
+                tail.setNext(null);
+            }else{
                 head = null;
             }
         }else{  // Delete a middle DoubleNode
